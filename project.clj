@@ -1,4 +1,4 @@
-(defproject prismatic/dommy "0.0.3-SNAPSHOT"
+(defproject cc.qbits/dommy "0.0.3"
   :description "No nonsense Clojurescript dom templating and manipulation"
   :url "https://github.com/prismatic/dommy"
   :license {:name "Eclipse Public License"
@@ -12,10 +12,10 @@
   :plugins [[lein-cljsbuild "0.3.0"]]
   :clojurescript? true
   :dependencies [[crate "0.2.3" :scope "dev"] ;; for perf test
-                 [prismatic/cljs-test "0.0.2"]] 
+                 [prismatic/cljs-test "0.0.2"]]
   :hooks [leiningen.cljsbuild]
-  :cljsbuild 
-    {:builds 
+  :cljsbuild
+    {:builds
      {:dev  {:source-paths ["src"]
              :compiler {:output-to "target/main.js"
                         :optimizations :whitespace
